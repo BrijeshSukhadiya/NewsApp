@@ -96,6 +96,12 @@ function myFunction()   //dark mode
     var element = document.getElementById('hero');
     var headline=document.getElementById('headline');
     var navtoggle=document.getElementById('nav');
+    var container = document.getElementsByClassName('container');
+    var title = document.getElementsByClassName('title');
+    for(var i = 0 ; i<container.length; i++){
+        container[i].classList.toggle("container-toggle");
+        title[i].classList.toggle("title-toggle");
+    }
     headline.classList.toggle("headline-toggle");
     element.classList.toggle("toggle");
     navtoggle.classList.toggle("nav-toggle");
