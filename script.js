@@ -91,6 +91,11 @@ sports.addEventListener("click", () => {
     getdata('sports')
 });
 
+var politics=document.querySelector(".politics");
+politics.addEventListener("click", () => {
+    getdata('politics')
+});
+
 function myFunction()   //dark mode
 {
     var element = document.getElementById('hero');
